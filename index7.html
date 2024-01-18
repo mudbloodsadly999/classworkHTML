@@ -1,182 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cantus.com</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <style>
-    */ {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: auto;
+      }
+      header {
+        width: 100%;
+        height: 80px;
+        background-color: red;
+        display: flex;
+      }
+      menu {
+        width: 600px;
+        margin-left: 30%;
+        margin-top: 30px;
+      }
 
-    body {
-      background-color: black;
-    }
+      a {
+        padding: 12px;
+        color: rgb(255, 255, 255);
+      }
+      .logo1 {
+        width: 100px;
+        height: 70px;
+        margin-left: 20%;
+      }
 
-    .parent {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-    }
+      .rock {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .photo1 {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid red;
+      }
+      .text1 {
+        width: 600px;
+        height: 400px;
+        color: red;
+       
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
-    .white {
-      width: 60%;
-      height: 900px;
-    }
+        margin-left: 35%;
+        position: absolute;
+        top: 31%;
+        
+      }
+      .text1 h1{
+        font-size: 60px;
+      }
+      .container h3 {
+        color: black;
+        margin-left: 20%;
+        font-size: 50px;
+        font-family: cursive;
+      }
+      button {
+        background-color: RED;
+        color: aliceblue;
+        width: 150px;
+        height: 40px;
+        border-radius: 40%;
+        margin-top: 15%;
+        margin-left: 40%;
+        border: 0;
+      }
+      .container2 {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgb(141, 141, 141);
+        position: relative;
+        top: 50px;
+        margin: 0 auto;
+        width: 1160px;
+        height: 550px;
+      }
+      h3 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 20px;
+      }
+      p {
+        color: red;
+        font-family: cursive;
+      }
+      .images {
+        display: flex;
+        position: relative;
+        width: 1200px;
+        margin-top: 30px;
+      }
+      .photo3 {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .smith {
+        background-color: red;
+        position: absolute;
+        top: 90%;
+        width: 370px;
+        height: 60px;
+      }
+      .rendi {
+        background-color: red;
+        position: absolute;
+        top: 90%;
+        width: 370px;
+        height: 60px;
+      }
+      .odim {
+        background-color: red;
+        position: absolute;
+        top: 90%;
+        width: 370px;
+        height: 60px;
+      }
+      .images h3 {
+        color: aliceblue;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .images h5 {
+        color: aliceblue;
+        margin-left: 20px;
+      }
+      .container3 {
+        position: relative;
+        top: 50px;
+        margin: 0 auto;
+        width: 1160px;
+        height: 650px;
+      }
 
-    .card1 {
-      position: absolute;
-      margin-top: 10%;
-      margin-right: 30%;
-    }
+      .vd video {
+        margin-top: 50px;
+        width: 1000px;
+        height: 500px;
+      }
+      table {
+        background-color: rgb(218, 215, 215);
+        border-collapse: collapse;
+        width: 1100px;
+        position: relative;
+        top: 40px;
+        margin: 0 auto;
+      }
+      td,
+      th {
+        text-align: left;
+        padding: 8px;
+        font-size: 20px;
+      }
+      th {
+        color: white;
+        background-color: red;
+        height: 50px;
+      }
+      .subscribe {
+        position: relative;
+        top: 130px;
+        margin: 0 auto;
+        border-bottom: 2px solid rgb(127, 127, 127);
+        width: 300px;
+        height: 40px;
+      }
+      .subscribe p {
+        color: rgb(77, 77, 77);
+      }
+      .subscribe img {
+        margin-left: 90%;
+        position: absolute;
+        top: 10px;
+      }
+      footer {
+        border-top: 1px solid rgb(219, 214, 214);
+        margin-top: 190px;
+        width: 100%;
+        height: 100px;
+      }
 
-    .card2 {
-      position: absolute;
-      margin-top: 25%;
-      margin-right: 20%;
-    }
-
-    .password {
-      text-align: center;
-      font-size: 100%;
-    }
-
-    .password {
-      margin-top: 20%;
-    }
-
-    input {
-      font-size: 20px;
-    }
-
-    label,
-    input {
-      color: rgb(35, 4, 35);
-    }
-
-    button {
-      background-color: rgb(107, 9, 107);
-      font-size: 10px;
-    }
-
-    button h2 {
-      color: azure;
-    }
-
-    .card-logo {
-      position: absolute;
-      margin-top: -50%;
-      margin-left: 5%;
-    }
-
-    .number0 {
-      margin-top: -30%;
-      margin-left: 5%;
-
-
-    }
-
-    .number0 h2 {
-      color: aliceblue;
-      font-size: 30px;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-
-    P {
-      color: aliceblue;
-      text-align: end;
-      margin-right: 10%;
-      margin-top: -6%;
-    }
-
-    h4 {
-      color: aliceblue;
-    }
-
-    .card2 p {
-      margin-top: -30%;
-      margin-right: 15%;
-    }
-  </style>
-</head>
+      nav {
+        margin: 0 auto;
+        width: 600px;
+        margin-top: 20px;
+      }
+      nav a {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: rgb(110, 109, 109);
+      }
+      .usa {
+        width: 600px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      .usa h5 {
+        color: rgb(64, 64, 64);
+      }
 
 
 
 
-<body class="parent">
-  <div class="purple">
-    <img src="./bg-main-desktop.png" alt="" />
-  </div>
-  <div style="background-color: rgb(255, 255, 255)" class="white">
 
 
-    <div class="password">
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        
+        <img class="logo1" src="logo.png" alt="" />
+        <menu>
+          <a class="menu-link" href="">HOME</a>
+          <a class="menu-link" href="">EVENTS</a>
+          <a class="menu-link" href="">GALLERY</a>
+          <a class="menu-link" href="">NEWS</a>
+          <a class="menu-link" href="">ALBUMS</a>
+          <a class="menu-link" href="">PAGES</a>
+        </menu>
+      </header>
 
-      <form action="#">
-
-        <label>
-
-          CARDHOLDER NAME<br><br>
-          <input type="text">
-        </label>
-
-
-        <label> <BR></BR>
-          CARD NUMBER <br>
-          <input type="number">
-        </label>
-
-
-        <label> <br> <br>
-          EXP. DATE (MM/YY) </BR>
-          <input type="date">
-          
-        </label>
-
-
-        <label><BR></BR>
-          CVC <BR>
-          <input type="number">
-        </label>
-
-
-      </form>
-      <BR></BR>
-      <button>
-        <h2>connfirm</h2>
-      </button>
-
+      <div class="rock">
+        <img class="photo1" src="./image1 (1).png" alt="" />
+        <div class="text1">
+          <h1>LET'S ROCK</h1>
+          <h3>With Cantus</h3>
+          <button>DISCOVER MORE</button>
+        </div>
+      </div>
     </div>
 
-  </div>
-  <div class="card1">
-    <img src="./bg-card-front.png" alt="">
+    <div class="container2">
+      <h3>INTRODUCING</h3>
+      <p>Our Members</p>
 
-    <nav class="card-logo">
-      <a href="">
-        <img src="./card-logo.svg" alt="">
-
-      </a>
-    </nav>
-    <div class="number0">
-      <h2>0000 0000 0000 0000</h4>
-        <H4>JANE APPLESEED</p>
-
-          <P>00/00</P>
+      <div class="images">
+        <div class="photo2">
+          <img src="./foto11.png" alt="" />
+          <div class="smith">
+            <h3>Jone smith</h3>
+            <h5>Vocal</h5>
+          </div>
+         </div>
+         <div class="photo3">
+          <img src="./foto1 2.png" alt="" />
+          <div class="rendi">
+            <h3>Rendi Outhor</h3>
+            <h5>Drum</h5>
+          </div>
+         </div>
+         <div class="photo4">
+          <img src="./foto 13.png" alt="" />
+          <div class="odim">
+            <h3>Renes Odim</h3>
+            <h5>Guiter</h5>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-  </div>
-
-
-  <div class="card2">
-    <img src="./bg-card-back.png" alt="">
-    <p>000</p>
-  </div>
-
-</body>
-
+    <div class="container3">
+      <h3>LATES</h3>
+      <p>Videos</p>
+      <div class="vd">
+        <video src="./videoplayback.mp4"></video>
+      </div>
+    </div>
+    <table class="table1">
+      <tr>
+        <th>Singer</th>
+        <th>Singles</th>
+        <th>Awwards</th>
+      </tr>
+      <tr>
+        <td style="color: red">Adele</td>
+        <td>30</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td style="color: red">Taylor Swift</td>
+        <td>40</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td style="color: red">Bruno Mars</td>
+        <td>20</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td style="color: red">Rihanna</td>
+        <td>109</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td style="color: red">Ed Sheeran</td>
+        <td>30</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td style="color: red">Lady Gaga</td>
+        <td>30</td>
+        <td>15</td>
+      </tr>
+    </table>
+    <div class="subscribe">
+      <p>subscribe newsletter</p>
+      <img src="./isari.png" alt="" />
+    </div>
+    <footer>
+      <nav>
+        <a class="" href="">HOME</a>
+        <a class="" href="">EVENTS</a>
+        <a class="" href="">GALLERY</a>
+        <a class="" href="">NEWS</a>
+        <a class="" href="">ALBUMS</a>
+        <a class="" href="">PAGES</a>
+      </nav>
+      <div class="usa">
+        <h5>
+          copyright © 2009-2016 Cantus © their respective owners. Shipped from
+          Salem, mass.USA.
+        </h5>
+      </div>
+    </footer>
+  </body>
 </html>
